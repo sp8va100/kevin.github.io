@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>秋爭闖關</title> 
+  
+    <style> 
+        html { 
+    font-family: sans-serif; 
+    } 
+      
+        body { 
+    width: 50%; 
+    max-width: 800px; 
+    min-width: 480px; 
+    margin: 0 auto; 
+    } 
+        .pic{
+    width: 300px;
+    }
+    </style> 
+</head> 
+  
+<body> 
+<h1>第一關</h1> 
+  
+<p>猜成語</p> 
+  
+<div class="form"> 
+    <label for="guessField">輸入答案: </label> 
+    <input type = "text" id = "guessField" class = "guessField"> 
+    <input type = "submit" value = "確認" 
+           class = "guessSubmit" id = "submitguess"> 
+</div> 
+<img src="https://upload.cc/i1/2020/07/31/O0iqrj.jpg" class = "pic">
+
+
+<script type = "text/javascript"> 
+  
+    // answer
+    var y = '高高在上'; 
+      
+    // counting the number of guesses 
+    // made for correct Guess 
+     
+      
+    document.getElementById("submitguess").onclick = function(){ 
+      
+   // number guessed by user      
+   var x = document.getElementById("guessField").value; 
+  
+   if(x == y) 
+   {     
+       alert("很簡單吧！"); 
+   } 
+   else{
+       alert("你好笨喔！猜錯了哈哈")
+   }
+} 
+</script> 
+</body> 
+</html>
